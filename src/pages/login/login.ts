@@ -23,7 +23,7 @@ export class LoginPage {
   
   login()
   {
-    console.log('Log in action pressed');
+    console.log('Log in action pressed.');
   }
 
 }

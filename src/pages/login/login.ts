@@ -13,6 +13,9 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  
+    public username: any;
+  public password: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -23,7 +26,7 @@ export class LoginPage {
   
   login()
   {
-    console.log('Log in action pressed.');
+    console.log('Log in action pressed.' + this.username + this.password);
   }
 
 }

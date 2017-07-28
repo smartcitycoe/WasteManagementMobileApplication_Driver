@@ -13,6 +13,13 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html',
 })
 export class SignupPage {
+  
+  public first_name: any;
+  public last_name: any;
+  public username: any;
+  public password: any;
+  public email: any;
+  public mobile_number: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -23,7 +30,7 @@ export class SignupPage {
   
   signup()
   {
-   console.log('signup action');
+   console.log('signup action' + this.first_name + this.last_name + this.username + this.password + this.email + this.mobile_number);
   
   }
 
